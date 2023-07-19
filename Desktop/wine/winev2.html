@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <title>WineRec AI</title>
+      <link href="style.css" type="text/css" rel="stylesheet">
+  </head>
+
+  <body>
+    <header>
+    <h1>WineRec AI</h1>
+    <p>Input your preferences to recieve three wine recommendations.</p><br>
+    <a href="index.html"><button>Return to homepage</button></a>
+    <img src="wine_pic.jpg" alt="WineAi" style="width:500px;height:330px;">
+    </header>
+    <form id="wineForm" onsubmit="return handleSubmit(event)">
+      <br>Tell us what you are looking for in a wine. Feel free to mention the food
+      <br>you are eating with, the varietal, the region, and more!<br><br>
+      <br><small style="font-size: 11px;">For example: I am looking for a red wine (preferably a Cabernet Sauvignon) that would pair
+        <br> well with a steak dinner. I'd like it to be from California, and I don't want to spend more than 50 dollars.</small>
+      <br><br><textarea id="descr" name="message" rows="6" cols="70" placeholder="Enter your preferences here..."></textarea>
+      <br>
+      <button id="submitBtn" onclick="handleSubmit(event)">
+        <div id="loadingAnimation" style="display: none;">
+          Loading...
+        </div>
+        <span id="submitText">Submit</span>
+      </button>
+      <button type="button" id="resetBtn">Reset</button>
+      <!-- <br><input type="submit" value="Submit"> -->
+    </form>
+    <br><div id="first_line"></div><br><br>
+    <div id="wine1"></div><br>
+    <div id="url1"></div><br><br>
+    <div id="wine2"></div><br>
+    <div id="url2"></div><br><br>
+    <div id="wine3"></div><br>
+    <div id="url3"></div><br><br>
+    <div id="last_line"></div><br><br>
+  </body>
+  <script src="wine_v5.js"></script>
+</html>

@@ -1,0 +1,34 @@
+* {
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
+.submit {
+  background-color: #0051A1;
+  color: #fff;
+  cursor: pointer;
+}
+
+.icon {
+  margin-right: 5px;
+  display: none;
+}
+
+.loading {
+  background-color: #014B94;
+  color: #eee;
+}
+
+.loading .icon {
+  display: inline-block;
+  color: #eee;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0); /* Fix the typo in 'transform' property */
+  }
+  100% {
+    transform: rotate(360deg); /* Fix the typo in 'transform' property */
+  }
+}
